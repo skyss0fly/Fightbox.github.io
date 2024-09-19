@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Explore PieMC documentation for setup, configuration, and plugins. Learn how to install, configure, and customize your PieMC server with ease.">
-    <title>PieMC Documentation - Setup, Configuration, and Plugins</title>
+    <title>Fightbox Documentation - Lore , History, Seasonal plans, Staff Listings</title>
 
     <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -24,7 +24,7 @@
 <header class="container header">
     <nav class="nav">
       <a href="../"><div class="logo">
-        <h2>PieMC 🍰</h2>
+        <h2>Fightbox</h2>
       </div>
       </a>
 
@@ -35,25 +35,27 @@
 
         <ul class="nav_menu_list">
           <li class="nav_menu_item">
-            <a href="https://github.com/PieMC-Dev/PieMC/releases/latest" class="nav_menu_link">
-              <i class="fa fa-download"></i> Download PieMC
+            <a href="https://Fightbox.github.io/Staff" class="nav_menu_link">Staff List
            </a>           
           </li>
           <li class="nav_menu_item">
-            <a href="/plugins/" class="nav_menu_link">
-              <i class="fas fa-puzzle-piece"></i> Plugins
+            <a href="/history/" class="nav_menu_link">
+              <i class="fas fa-puzzle-piece"></i> History
             </a>
           </li>
           <li class="nav_menu_item">
-            <a href="https://github.com/PieMC-Dev/PieMC/" class="nav_menu_link">
-              <i class="fab fa-github"></i> Github
-            </a>
-          </li>
-          <li class="nav_menu_item">
-            <a href="https://discord.gg/Bf3cXRUUnm" class="nav_menu_link">
+            <a href="https://discord.gg/RrNz6s5XbA" class="nav_menu_link">
               <i class="fab fa-discord"></i> Discord
             </a>
           </li>
+          <li class="nav_menu_item">
+            <a href="https://fightbox.github.io/Lore" class="nav_menu_link">Lore
+            </a>
+          </li>
+           <li class="nav_menu_item">
+            <a href="https://fightbox.github.io/Seasons" class="nav_menu_link">Season Info
+            </a>
+           </li>
         </ul>          
       </div>
 
@@ -69,19 +71,16 @@
             <fieldset>
                 <legend>Table Of Contents</legend>
                 <ul>
-                    <li><a href="#Setup&Start"><b>- Setup & Start</b></a>
+                    <li><a href="#staff"><b>Staff List</b></a>
                         <ul>
-                            <li><a href="#Setup&Start#Requirements">Requirements</a></li>
-                            <li><a href="#Setup&Start#Guide">Basic Guide</a></li>
+                            Coming Soon
                         </ul>
                     </li>
-                    <li><a href="#Config"><b>- Configuration</b></a> 
+                    <li><a href="#Lore"><b>- Lore</b></a> 
                     </li>
-                    <li><a href="#Plugins"><b>- Plugins</b></a>
+                    <li><a href="#History"><b>History</b></a>
                         <ul>
-                            <li><a href="#Plugins#Download">Downloading Plugins</a></li>
-                            <li><a href="#Plugins#InstalationAndUpdate">Installing/updating a plugin</a></li>
-                            <li><a href="#Plugins#Dev">Writing your own plugins</a></li>
+                            coming soon
                         </ul>
                     </li>
                 </ul>
@@ -89,65 +88,38 @@
         </div>
         <div class="articles">
             <article>
-              <h1 id="Setup&Start" class="title">PieMC Documentation - Setup & Start</h1>
-                <p>
-                    <b id="Setup&Start#Requirements">A computer or device with the following is required:</b><br>
-                     - Python 3.10 or newer Installed <br>
-                </p>
-                <h3 id="Setup&Start#Guide">Installing, Updating and Running:</h3>
-                <p>
-                    1. Download the latest stable version of PieMC on github. <br>
-                    2. Unzip the file <br>
-                    3. Double click on start.cmd (For windows) or start.sh (For Linux).<br>
-                    4. If there is any update available, it will update automatically.
-                </p>
-            </article>
-            <article>
-                <h1 id="Config" class="title">Configuration</h1>
-                <p>
-                    Let's take a look to the configuration file: <code>config.py</code>. This file is used to store various settings for PieMC. It can be found in piemc folder.
-                </p>
-                <pre>
-HOST = 0.0.0.0
-PORT = 19132
-MAX_PLAYERS = 20
-GAMEMODE = Survival
-LANG = en
-MOTD1 = PieMC Server
-MOTD2 = Powered by PieMC
-DEBUG = True  ; Only For Development
-                </pre>
-                <p>
-                    In the<code>config.py</code> file, we have defined settings for the PieMC server.
-                </p>
-                <p>
-                    For example, the <code>HOST</code> setting is set to <code>0.0.0.0</code>, indicating that the server will listen on localhost. The <code>PORT</code> setting is set to <code>19132</code> (Default), specifying the port number the server will use for communication with the client. <br/>
-                    Other settings such as <code>MAX_PLAYERS</code>, <code>GAMEMODE</code>, <code>LANG</code>, <code>MOTD1</code>, <code>MOTD2</code>, and <code>DEBUG</code> are also defined.
-                </p>
-            </article>
-            <article>
-                <h1 id="Plugins" class="title">Plugins</h1>
-                <p>
-                    PieMC can be extended and customized with plugins.<br/>
-                    A plugin is an external module which can be “plugged in” to your server to add custom features, change default behaviours and more.
-                </p>
-                <h3 id="Plugins#Download">Downloading Plugins</h3>
-                <p>
-                    Discover a diverse array of pre-made plugins on our plugin Marketplace, <a href="/plugins">PieMC Marketplace</a>.
-                </p>
-                <h3 id="Plugins#InstalationAndUpdate">Installing/updating a plugin</h3>
-                <p>
-                    Installing the desired plugin will be a breeze with a simple command execution. <br> 
-                    You can find the specific installation command in the <a href="/plugins">PieMC Marketplace</a> (Under Development).
-                </p>
+               
+              
                 
-                </p>
-                <h3 id="Plugins#Dev">Creating your own plugin</h3>
+                <h3 id="Staff">Staff List</h3>
                 <p>
-                    Creating your own plugin will be a seamless task, thanks to our robust and powerful development library.
+                    Founder: skyss0fly 
+                    Owners: Helix_m2, YhItsLost
+                    Og Owners: Bluey, MysticFM
+                    Executives: None
+                    Managers: None
+                    Developers: skyss0fly, Helix_m2, YhItsLost
+                    Administrators: None
+                    Moderators: CrazyPlayerM100
+                    Trial Moderators: None
+                    Testers: Sif, CrazyPlayerM100
                 </p>
-                <pre class="language-markup">// Coming Soon</pre>
-                <p> After Early Access to our Plugin API? see <a href="https://PieMC-Dev.github.io/docs/beta">here</a></p>
+            </article>
+            <article>
+                <h1 id="History" class="title">History</h1>
+                <p>
+                   History Coming Soon
+                </p>
+            </article>
+            <article>
+                <h1 id="Lore" class="title">Lore</h1>
+                <p>
+                   Coming Soon
+                </p>
+                <h3 id="Seasons" class="title">Seasons</h3>
+                <p>
+                   coming soon
+                </p>
             </article>
             </div>
     </div>
@@ -156,7 +128,7 @@ DEBUG = True  ; Only For Development
 
   <footer class="footer">
     <div class="footer">
-      <p>&copy; 2023 PieMC. All rights reserved.</p>
+      <p>&copy; 2024 Fightbox Network. All rights reserved.</p>
     </div>
   </footer>
 <script src="../assets/js/script.js"></script>
