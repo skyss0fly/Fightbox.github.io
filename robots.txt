@@ -3,4 +3,4 @@ Crawl-delay: 2
 
 Allow: *
 
-Sitemap: https://piemc-dev.github.io/sitemap.xml
+Sitemap: https://fightbox.github.io/sitemap.xml
